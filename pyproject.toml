@@ -10,3 +10,5 @@ dependencies = []
 dev = [
     "pytest>=9.0.1",
 ]
+pythonpath = "."
+testpaths = ["tests"]
