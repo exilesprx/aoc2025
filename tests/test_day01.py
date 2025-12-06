@@ -1,4 +1,4 @@
-from solutions.day01 import part1, part2, solve
+from solutions.day01 import part1, part2
 
 
 def test_example_file_part_1():
@@ -8,6 +8,6 @@ def test_example_file_part_1():
 
 
 def test_example_file_part_2():
-    file = "data/day01.example2.txt"
+    file = "data/day01.example.txt"
     result = part2(file)
     assert result == 6
