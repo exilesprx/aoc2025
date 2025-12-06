@@ -44,12 +44,12 @@ def part2(file_path: str, starting_point: int = 50) -> int:
             starting_point -= distance
             if starting_point < 0:
                 starting_point += 100
-                password += 1 if not started_at_zero and starting_point != 0 else 0
+                password += 0 if started_at_zero or starting_point == 0 else 1
         elif direction == "R":
             starting_point += distance
             if starting_point > 99:
                 starting_point -= 100
-                password += 1 if not started_at_zero and starting_point != 0 else 0
+                password += 0 if started_at_zero or starting_point == 0 else 1
         else:
             raise ValueError(f"Invalid direction: {direction}")
 
